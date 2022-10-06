@@ -47,3 +47,9 @@ Se elimina la orden correctamente
 Tambien se elimina de la Base de datos de Firebase
 
 ![Image text](https://github.com/jricardocam/AplinTest/blob/main/src/public/img9.jpg)
+
+
+
+https://user-images.githubusercontent.com/99063528/194359519-bceb40a8-2586-4c57-ac1f-b075b351daaa.mp4
+
+
