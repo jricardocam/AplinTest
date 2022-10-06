@@ -16,3 +16,5 @@ npm run dev
 ```
 
 Se ejecuta en Localhost:3000
+
+![Image text](https://github.com/jricardocam/AplinTest/blob/main/src/public/img1.jpg)
