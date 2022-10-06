@@ -35,5 +35,12 @@ router.get('/delete-orden/:id', (req, res) => {
     res.redirect('/');
 });
 
+router.get('/edit-orden/:id', (req, res) => {
+    const id = req.params.id;
+    db.ref('ordenes/' + id).once('value', (snapshot) => {
+        const data = snapshot.val();
+        res.render('edit-orden', { orden: data, id: id });
+    });
+});
 module.exports = router;
 
