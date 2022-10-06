@@ -1,0 +1,39 @@
+<div class="carta">
+    
+    <form action="/nuevaorden" method="POST" class="form-register">
+        <h1 class="form__title">Crear nueva orden</h1>
+        <div class="container--flex">
+            <label for="" class="form__label" name="id">ID</label>
+            <input type="text" name="id" class="form__input">
+        </div>
+        <div class="container--flex">
+            <label for="" class="form__label" name="sku">SKU</label>
+            <input type="text" name="sku" class="form__input">
+        </div>
+        <div class="container--flex">
+            <label for="" class="form__label" name="cantidad">Cantidad</label>
+            <input type="text" name="cantidad" class="form__input">
+        </div>
+        <button class="form__submit">Enviar</button>
+
+        <div class="orders">
+            <h1>Ordenes Creadas</h1>
+            {{#if ordenes}}
+                <ul class="list-group">
+                    {{#each ordenes}}
+                    <h2>ID           SKU           Cantidad</h2>
+                    <li class="list-group-item">
+                        
+                        {{id}} / 
+                        {{sku}} / 
+                        {{cantidad}} 
+                        <a href="/delete-orden/{{@key}}" class="btn-delete">Borrar</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            {{else}}
+            <p>No hay ordenes creadas</p>
+            {{/if}}
+        </div>
+    </form>
+</div>
